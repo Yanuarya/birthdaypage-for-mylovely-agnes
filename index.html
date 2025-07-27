@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Sayang!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app-window">
+    <div class="window-header">
+      <span class="window-title">Birthday App</span>
+      <div class="window-buttons">
+        <span class="btn minimize">_</span>
+        <span class="btn fullscreen">▭</span>
+        <span class="btn close">×</span>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="sidebar">
+        <button onclick="showSection('candle')">Tiup Lilin</button>
+        <button onclick="playMusic()">Play Music</button>
+        <button onclick="showSection('message')">Baca Ucapan</button>
+        <button onclick="showSection('photos')">Lihat Foto</button>
+        <button onclick="showSection('video')">Lihat Video</button>
+      </div>
+
+      <div class="main">
+        <div id="loading" class="section">
+          <h1>Hay sayang, happy birthday yaa 💙 Enjoy for watching &lt;3</h1>
+          <button onclick="startApp()">Klik disini untuk lanjut</button>
+        </div>
+
+        <div id="candle" class="section hidden">
+          <img src="kueultah.png" alt="Kue Ultah" class="large-img">
+          <p>Maaf ya sayang ga gerak, susah nyari animasinya 😅</p>
+        </div>
+
+        <div id="message" class="section hidden">
+          <p class="love-text">
+            Allo sayangnya abangg, cintanya abang. Hey baby, happy birthday ya sayang &lt;3. Hari ini tepat dimana 20 tahun yg lalu almh mama udah ngelahirin malaikat yg sungguh luar biasa didunia ini, yaapp, sekarang 03 Agustus 2025, 20 tahun sudah agnes ada di dunia yang penuh lika liku ini, didunia yang penuh drama ini, dan abang bangga, abang bangga karena agnes masih kuat dan bertahan sejauh ini, so proud of you bby &lt;3. Sayang, makasih ya, udah bertahan selama 20 tahun ini, makasih udah survive sejauh ini, abang tau itu ga mudah, sayang, makasih udah hadir dan menemani hidup abang, abang bersyukur ditemukan dengan wanita super duper sabar seperti sayang, abang janji kedepannya kita akan selalu merayakan tanggal 03 agustus ini bareng bareng yaa, makasih udah kuat ya sayang, makasih udah hadir, sayang itu seperti lagu "You are the reason". Adanya sayang didunia ini, datangnya sayang di kehidupan laki laki seperti abang ini, adalah alasan mengapa laki laki ini masih kuat sampai saat ini, you are the reason bby. I love you so muchh, now, tomorrow, and forever. Once again, happy birthday my future, Ruth Agnes Afinesdy Gerrits &lt;3
+          </p>
+        </div>
+
+        <div id="photos" class="section hidden">
+          <img src="photo1.jpeg" class="photo">
+          <img src="photo2.jpeg" class="photo">
+          <img src="photo3.jpeg" class="photo">
+          <img src="photo4.jpeg" class="photo">
+          <img src="photo5.jpeg" class="photo">
+        </div>
+
+        <div id="video" class="section hidden">
+          <video controls id="bday-video" width="100%">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="bg-music" src="music.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+
+</html>
